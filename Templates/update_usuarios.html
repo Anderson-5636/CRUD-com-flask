@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form method='post' action='/usuarios/update/{{u.id}}'>
+
+      Nome: <input name='nome' type="text" size='100' placeholder='Digite o seu nome' value="{{u.nome}}"/>
+      E-mail: <input name='email' type="email" size='100' placeholder='Digite o seu email' value="{{u.email}}"/>
+      Senha: <input name='senha' type="password" size='100' placeholder='Digite a sua senha' />
+      Confirmacao de Senha: <input name='csenha' type="password" size='100' placeholder='Confirme a sua senha'/>
+      <br>
+      <input type='submit' value='Atualizar'>
+      <!--<button>cadastrar</button>-->
+
+    </form>
+  </body>
+</html>
